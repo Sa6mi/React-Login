@@ -1,0 +1,36 @@
+.Container2 {
+  background-color: #3a3b41;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  min-width: 30rem;
+}
+.Container2 .Login-Form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.Container2 .Login-Form .Login-Form-Item {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 20px;
+}
+.Container2 .Login-Form .Login-Form-Item input {
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #2d2d35;
+  border: 1px solid #2d2d35;
+  font-size: 1.4rem;
+  min-width: 100%;
+  color: #7f7f85;
+}
+.Container2 .Login-Form .Login-Form-Item .Submit {
+  width: 50%;
+}/*# sourceMappingURL=Login.css.map */

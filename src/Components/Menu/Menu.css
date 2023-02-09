@@ -1,0 +1,70 @@
+.Menu {
+  background-color: #43434d;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  transition: font-size 80ms ease-in;
+}
+.Menu .Header {
+  font-size: 3rem;
+  padding: 1rem 1rem 4rem 1rem;
+}
+.Menu .Header .Menu-Icon {
+  border-radius: 100%;
+  color: #7f7f85;
+  transition: all 300ms;
+}
+.Menu .Header .Menu-Icon:hover {
+  cursor: pointer;
+  color: white;
+}
+.Menu .MenuItem {
+  gap: 0.2rem;
+  transition: all 300ms;
+  font-size: 1.2em;
+  padding: 1rem 1em 1rem 1rem;
+  color: #7f7f85;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Menu .MenuItem:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #2d2d35;
+}
+.Menu .Logout {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  align-items: center;
+  color: #7f7f85;
+  font-size: 1.2em;
+  padding: 1rem 0rem 1rem 1rem;
+  position: absolute;
+  transition: all 300ms;
+  bottom: 0;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.Menu .Logout:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #2d2d35;
+}
+
+#disableMenu {
+  font-size: 0em;
+}/*# sourceMappingURL=Menu.css.map */

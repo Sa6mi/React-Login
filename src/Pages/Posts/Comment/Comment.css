@@ -1,0 +1,191 @@
+.postsWrapper {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding-right: 1rem;
+}
+.postsWrapper::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.postsWrapper::-webkit-scrollbar-track {
+  background: #3a3b41;
+  border-radius: 10px;
+}
+.postsWrapper::-webkit-scrollbar-thumb {
+  background: #3a3b41;
+  border-radius: 10px;
+}
+.postsWrapper::-webkit-scrollbar-thumb:hover {
+  background: #5e75ff;
+}
+.postsWrapper .WrapEverything {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #3a3b41;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.postsWrapper .WrapEverything .Post {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: white;
+  transition: all 200ms;
+}
+.postsWrapper .WrapEverything .Post .Avatar {
+  width: 8%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 100%;
+}
+.postsWrapper .WrapEverything .Post .Avatar img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  background-color: aliceblue;
+}
+.postsWrapper .WrapEverything .Post .postColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  text-align: left;
+  padding-top: 0.4rem;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Info .FullName {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Info .UserName {
+  color: #7f7f85;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Post-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Post-Content {
+  word-wrap: break-word;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Fotter {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #7f7f85;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Fotter .Comments {
+  width: 50%;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Fotter .Comments .CommentButton {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+  color: #5e75ff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: relative;
+  transition: all 200ms;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Fotter .Comments .CommentButton:hover {
+  cursor: pointer;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Fotter .Tags {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 0rem;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Fotter .Tags .Tag {
+  transition: all 200ms;
+}
+.postsWrapper .WrapEverything .Post .postColumn .Fotter .Tags .Tag:hover {
+  cursor: pointer;
+  color: #5e75ff;
+}
+.postsWrapper .WrapEverything .Comments-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+  border-left: 2px solid #5e75ff;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment .Avatar {
+  width: 8%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 100%;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment .Avatar img {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  background-color: aliceblue;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment .Comment-Column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  text-align: left;
+  padding-top: 0rem;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment .Comment-Column .Info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment .Comment-Column .Info .FullName {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment .Comment-Column .Info .UserName {
+  color: #7f7f85;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.postsWrapper .WrapEverything .Comments-wrapper .Comment .Comment-Column .Comment-Content {
+  word-wrap: break-word;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#Active {
+  background-color: #5e75ff;
+  color: white;
+}/*# sourceMappingURL=Comment.css.map */

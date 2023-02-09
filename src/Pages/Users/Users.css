@@ -1,0 +1,46 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.Container .UserList {
+  background-color: #2d2d35;
+  padding: 0;
+}
+.Container .UserList ul {
+  list-style: none;
+  overflow-y: auto;
+  max-height: 20rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.Container .UserList ul::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.Container .UserList ul::-webkit-scrollbar-track {
+  background: #43434d;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.Container .UserList ul::-webkit-scrollbar-thumb {
+  background: #7f7f85;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.Container .UserList ul::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+.Container .UserList ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 4em;
+  border-bottom: 1px solid #3a3b41;
+  font-size: 1.3rem;
+  transition: all 200ms;
+  color: #7f7f85;
+}
+.Container .UserList ul li:hover {
+  background-color: #202025;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=Users.css.map */

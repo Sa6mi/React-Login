@@ -1,0 +1,120 @@
+.postsWrapper {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow-y: auto;
+  max-height: 100vh;
+  padding-right: 1rem;
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #3a3b41;
+
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #3a3b41;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #5e75ff;
+  }
+  .Post {
+    &:first-of-type {
+      margin-top: 2rem;
+    }
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    height: max-content;
+    background-color: #3a3b41;
+    border-radius: 20px;
+    padding: 1rem;
+    color: white;
+    transition: all 200ms;
+    .Avatar {
+      width: 8%;
+      height: fit-content;
+      border-radius: 100%;
+
+      img {
+        width: 100%;
+        height: fit-content;
+        border-radius: 100%;
+        background-color: aliceblue;
+      }
+    }
+    .postColumn {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      text-align: left;
+      padding-top: 0.4rem;
+      .Info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        .FullName {
+          font-size: 0.9rem;
+          font-weight: bold;
+        }
+        .UserName {
+          color: #7f7f85;
+          font-size: 0.7rem;
+          font-weight: bold;
+        }
+      }
+      .Post-Content {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .Fotter {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        color: #7f7f85;
+        font-weight: bold;
+        font-size: 1rem;
+        .Comments {
+          width: 50%;
+          .CommentButton {
+            // background-color: #5e75ff;
+            width: fit-content;
+            border-radius: 10px;
+            padding: 0.2rem 0.5rem;
+            color: #5e75ff;
+            font-size: 0.8rem;
+            font-weight: bold;
+            position: relative;
+            transition: all 200ms;
+            &:hover {
+              cursor: pointer;
+              background-color: #5e75ff;
+              color: white;
+            }
+          }
+        }
+        .Tags {
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          padding: 0rem;
+          .Tag {
+            
+            transition: all 200ms;
+            &:hover {
+              cursor: pointer;
+              color: #5e75ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
